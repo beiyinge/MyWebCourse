@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics of HTML, CSS and JavaScript</title>
+    <script>
+        function init() {
+            let me = {name: 'Beiying', email: 'person@gmail.com', hobbies: 'travel, reading'};
+            document.getElementById("name").innerHTML = me.name;
+            document.getElementById("email").innerHTML = me.email;
+            document.getElementById("hobbies").innerHTML = me.hobbies;
+        }
+    </script>
+    <style>
+        div {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid purple;
+            background-color: grey;
+            color: purple;
+        }
+        div#email {
+            color: blue;
+        }
+        div#hobbies {
+            font-weight: bold;
+            color:green;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <div id="name"></div>
+    <div id="email"></div>
+    <div id="hobbies" class="two"></div>
+</body>
+</html>
